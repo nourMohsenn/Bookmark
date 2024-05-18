@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/bookmark_545053.png" type="image/x-icon">
+    <title>Bookmark</title>
+
+</head>
+
+<body class="text-center ">
+    <!-- page name -->
+    <h1 class="position-relative mx-auto z-3 my-5">Bookmarker</h1>
+    <!-- container of form -->
+    <div class="container py-4">
+        <h3 class="mx-auto pb-4">Bookmark your favorite sites</h3>
+        <form action="" class=" ">
+            <div class="content w-97 text-start bfg-danger py-1 position-relative">
+                <label for="bookMarkName"><i class="fa-solid fa-book-bookmark"></i> site name</label>
+                <input type="text" id="bookMarkName" class="form-control  mx-auto mb-4 position-relative"
+                    placeholder="bookMark Name" onkeyup="validBookMarkName()">
+                <label for="bookMarkUrl"><i class="fa-solid fa-link"></i>site URL</label>
+                <input type="text" id="bookMarkUrl" class="form-control  mx-auto mb-4" placeholder="website URL"
+                    onkeyup="validBookMarkUrl()">
+            </div>
+            <button type="button" class="btn px-5" onclick="addBookMark()" data-bs-toggle="modal"
+                data-bs-target="#invalid" id="checkBtn">submit</button>
+        </form>
+    </div>
+    <!-- table -->
+    <table class="table container mt-4 text-capitalize">
+        <tr>
+            <th>index</th>
+            <th>website name</th>
+            <th>visit</th>
+            <th>delete</th>
+        </tr>
+        <tbody class="align-baseline" id="tableRows">
+
+        </tbody>
+    </table>
+
+    <!-- error modal -->
+    <div id="check">
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

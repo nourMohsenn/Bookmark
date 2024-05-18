@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "PT Sans Caption", sans-serif;
+    background-color: #f7ecde;
+}
+
+::selection {
+    background-color: #fec260;
+}
+
+h3::selection {
+    background-color: #fec260;
+    color: black;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+    color: #352e28;
+    width: fit-content;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    background-color: #fec260;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    transition: all .5s;
+}
+
+h1:hover::before {
+    height: 70%;
+}
+
+div.container {
+    border-block: 2px dotted;
+}
+
+h3 {
+    font-family: "Righteous", sans-serif;
+    width: fit-content;
+    position: relative;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, green, rgb(184, 144, 16));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h3::before,
+h3::after {
+    content: "\f02e";
+    font-family: fontawesome;
+    padding-inline: 0.5rem;
+
+}
+
+.w-97 {
+    width: 97%;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #e1ac58;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem #faddb3;
+}
+
+label {
+    padding-bottom: 0.5rem;
+}
+
+form .btn {
+    background-color: #d1512d;
+    color: white;
+}
+
+form .btn:hover {
+    background-color: #bb4525;
+    color: white;
+
+}
+
+tbody .btn-green {
+    background-color: #9eb23b;
+    color: white;
+
+}
+
+tbody .btn-green:hover {
+    background-color: #7f902a;
+    color: white;
+}
+
+#bookMarkName::after {
+    content: "\f06a";
+    font-family: fontawesome;
+    position: absolute;
+    top: 0;
+    font-size: 50px;
+    color: red;
+
+}
