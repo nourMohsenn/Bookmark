@@ -48,7 +48,7 @@ h3 {
     width: fit-content;
     position: relative;
     font-size: 1.5rem;
-    background-image: linear-gradient(to right, green, rgb(184, 144, 16));
+    background-image: linear-gradient(to right, #3fa55c, #b1ac4a);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -97,14 +97,4 @@ tbody .btn-green {
 tbody .btn-green:hover {
     background-color: #7f902a;
     color: white;
-}
-
-#bookMarkName::after {
-    content: "\f06a";
-    font-family: fontawesome;
-    position: absolute;
-    top: 0;
-    font-size: 50px;
-    color: red;
-
 }
